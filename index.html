@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Quest: Comic Con Edition — Villa College 2026</title>
+    <meta name="description" content="Villa College presents Campus Quest: Comic Con Edition - A two-day pop-culture festival & interactive campus experience. May 01-02, 2026 at QI Campus, Malé.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Animated Background -->
+<div class="bg-particles" id="bgParticles"></div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-logo">⚡ CAMPUS QUEST</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#quest">The Quest</a></li>
+        <li><a href="#factions">Factions</a></li>
+        <li><a href="#attractions">Attractions</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#marketplace">Marketplace</a></li>
+        <li><a href="#kpi">Impact</a></li>
+        <li><a href="#future">Future</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+    <div class="hero-bg">
+        <img src="images/hero.png" alt="Comic Con Convention Hall" id="editableHeroImg">
+    </div>
+    <div class="hero-content">
+        <div class="hero-badge">🎮 FIRST-EVER IN THE MALDIVES</div>
+        <h1 class="hero-title">
+            <span class="line1" id="editableHeroTitle1">VILLA COLLEGE</span>
+            <span class="line2 glitch" data-text="COMIC-CON & CAMPUS QUEST" id="editableHeroTitle2">COMIC-CON & CAMPUS QUEST</span>
+        </h1>
+        <p class="hero-subtitle animate-text-1" id="editableHeroSubtitle">Powering the Next Generation of Heroes</p>
+        <p class="hero-desc animate-text-2" id="editableHeroDesc">A landmark, two-day pop-culture festival that transforms our entire QI Campus into an immersive adventure. Cosplay, gaming, anime, challenges, and your future — all in one epic experience.</p>
+        <div class="hero-meta animate-text-3">
+            <div class="hero-meta-item"><span class="icon">📍</span> <span id="editableVenue">QI Campus, Villa College, Malé</span></div>
+        </div>
+        <a href="#about" class="hero-cta">EXPLORE THE QUEST ↓</a>
+    </div>
+    <div class="scroll-indicator">↓</div>
+</section>
+
+<!-- WHAT IS COMIC CON + EVENT -->
+<section class="section" id="about">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// THE ORIGIN STORY</span>
+            <h2 class="section-title" id="editableAboutTitle">What is Comic Con?</h2>
+            <p class="section-desc" id="editableAboutDesc">Born from the passion of fans worldwide, Comic Con has become the ultimate celebration of pop culture — and we're bringing that magic to Villa College.</p>
+        </div>
+
+        <div class="what-is-grid reveal">
+            <div class="what-is-image">
+                <img src="images/cosplay.png" alt="Cosplay at Comic Con" id="editableAboutImg">
+            </div>
+            <div class="what-is-text">
+                <h3 id="editableAboutH3">The World's Biggest Pop-Culture Phenomenon</h3>
+                <p id="editableAboutP1">Comic Con (short for Comic Convention) is a multi-genre entertainment and comic book convention that celebrates everything from anime, manga, and superhero movies to esports, cosplay, and indie gaming. The original San Diego Comic-Con, founded in 1970, now attracts over <strong>135,000 attendees annually</strong> and has spawned hundreds of conventions worldwide.</p>
+                <p id="editableAboutP2">These events are where fans become heroes, where students discover passions they didn't know they had, and where the line between entertainment and education beautifully blurs.</p>
+                <ul class="highlight-list">
+                    <li><span class="icon">⚡</span> <span>Cosplay competitions where fans become their favorite characters</span></li>
+                    <li><span class="icon">🎮</span> <span>Esports tournaments & gaming zones with the latest titles</span></li>
+                    <li><span class="icon">🎨</span> <span>Artist alleys, merchandise markets & exclusive collectibles</span></li>
+                    <li><span class="icon">🎭</span> <span>Interactive panels, workshops & celebrity appearances</span></li>
+                    <li><span class="icon">🌍</span> <span>A community of thousands united by shared passions</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-row">
+            <div class="stat-card glass-card reveal reveal-delay-1">
+                <div class="stat-number" id="editableStat1">2</div>
+                <div class="stat-label">Epic Days</div>
+            </div>
+            <div class="stat-card glass-card reveal reveal-delay-2">
+                <div class="stat-number" id="editableStat2">9</div>
+                <div class="stat-label">Faculty Quest Stations</div>
+            </div>
+            <div class="stat-card glass-card reveal reveal-delay-3">
+                <div class="stat-number" id="editableStat3">20+</div>
+                <div class="stat-label">Side Attractions</div>
+            </div>
+            <div class="stat-card glass-card reveal reveal-delay-4">
+                <div class="stat-number" id="editableStat4">500+</div>
+                <div class="stat-label">Expected Attendees</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- THE CAMPUS QUEST SECTION -->
+<section class="section" id="quest" style="background: linear-gradient(180deg, transparent, rgba(168,85,247,0.03), transparent);">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// THE GAME PLAN</span>
+            <h2 class="section-title">The Campus Quest — How It Works</h2>
+            <p class="section-desc">Every attendee becomes a hero on a quest. Register, explore 9 themed faculty stations, complete challenges, and claim your Grand Prize.</p>
+        </div>
+
+        <div class="what-is-grid reveal" style="margin-bottom: 3rem;">
+            <div class="what-is-text">
+                <h3>🗺️ Your Hero's Journey</h3>
+                <p>Upon registration, you receive a <strong>Digital Hero Passport</strong> on our web-app. Your mission: visit all 9 Faculty Quest Stations across the campus, complete each 2-minute themed challenge, and scan the QR code to earn a digital stamp.</p>
+                <p>Complete all 9 stamps and you'll face <strong>THE FINAL BOSS</strong> — the Admissions Hub — where you verify your passport, receive personalized course counseling, and enter the Grand Prize draw!</p>
+                <ul class="highlight-list">
+                    <li><span class="icon">📱</span> <span><strong>Step 1:</strong> Register on the web-app and get your Digital Hero Passport</span></li>
+                    <li><span class="icon">🗺️</span> <span><strong>Step 2:</strong> Use the Hero Map to navigate to 9 faculty quest stations</span></li>
+                    <li><span class="icon">🎯</span> <span><strong>Step 3:</strong> Complete themed challenges at each station (AI hacking, mock trials, CPR drills...)</span></li>
+                    <li><span class="icon">📷</span> <span><strong>Step 4:</strong> Scan QR codes to earn stamps and level up your passport</span></li>
+                    <li><span class="icon">🏆</span> <span><strong>Step 5:</strong> All 9 stamps? Face the Final Boss at the Admissions Hub for your Grand Prize entry!</span></li>
+                </ul>
+            </div>
+            <div class="what-is-image">
+                <img src="images/quest.png" alt="Interactive Quest Map" id="editableQuestImg">
+            </div>
+        </div>
+
+        <!-- Side Quests highlight -->
+        <div class="glass-card reveal" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h3 style="font-family: 'Bangers', cursive; font-size: 1.5rem; letter-spacing: 1px; margin-bottom: 1rem; color: var(--neon-orange);">🔍 BONUS: Side Quests & Hidden Secrets</h3>
+            <p style="color: var(--text-secondary); line-height: 1.8;">
+                <strong style="color: var(--neon-cyan);">The Rogue AI Scavenger Hunt:</strong> 5 hidden golden QR codes placed in secret campus locations. Find one and earn a massive point multiplier!<br><br>
+                <strong style="color: var(--neon-pink);">Flash Polls:</strong> Hourly push notifications — "Who wins: Superman or Saitama?" Vote live and see results on the main stage!<br><br>
+                <strong style="color: var(--neon-green);">Photo Booth Viral Loop:</strong> Share your cosplay photo tagging Villa College for a bonus stamp multiplier!
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FACTIONS (FACULTIES) -->
+<section class="section" id="factions">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// CHOOSE YOUR FACTION</span>
+            <h2 class="section-title">The 9 Faculty Quest Stations</h2>
+            <p class="section-desc">Each faculty is transformed into an immersive "Faction" — a themed experience that entertains you while showcasing academic excellence. Every challenge is a course demo in disguise.</p>
+        </div>
+
+        <div class="factions-grid">
+            <!-- Faction 1 -->
+            <div class="glass-card faction-card reveal reveal-delay-1">
+                <span class="faction-icon">🎓</span>
+                <h3>Centre for Foundation Studies</h3>
+                <div class="faction-theme">The Hero Academy — My Hero Academia / Hogwarts / Jujutsu High</div>
+                <div class="faction-challenge">Challenge: "The Sorting Exam"</div>
+                <p>A high-energy pop-culture trivia board mixing anime lore, gaming history, and movie knowledge. Answer 5 rapid-fire questions and get sorted into your academic destiny.</p>
+                <span class="faction-tag" style="background: rgba(234,179,8,0.15); color: var(--neon-yellow);">⚡ Gateway Level</span>
+            </div>
+            <!-- Faction 2 -->
+            <div class="glass-card faction-card reveal reveal-delay-2">
+                <span class="faction-icon">💻</span>
+                <h3>School of Computer Science & Faculty of Engineering</h3>
+                <div class="faction-theme">The Cyber Forge — Cyberpunk / Iron Man / Valorant</div>
+                <div class="faction-challenge">Challenge: "Hack & Build"</div>
+                <p>Interact with a live AI to extract a secret password, then immediately assemble a snap-circuit to light an LED under a 60-second timer. Neon hacker vibes meet robotic blueprints!</p>
+                <span class="faction-tag" style="background: rgba(34,197,94,0.15); color: var(--neon-green);">🔓 Tech-Build Level</span>
+            </div>
+            <!-- Faction 4 -->
+            <div class="glass-card faction-card reveal reveal-delay-1">
+                <span class="faction-icon">⚖️</span>
+                <h3>Faculty of Shariah & Law — VCLS</h3>
+                <div class="faction-theme">Hall of Justice — Gotham City / Phoenix Wright / Danganronpa</div>
+                <div class="faction-challenge">Challenge: "OBJECTION!"</div>
+                <p>"Batman destroyed a local café while chasing the Joker. Must he pay for damages?" Argue your case in the Moot Court against student lawyers before a costumed judge!</p>
+                <span class="faction-tag" style="background: rgba(239,68,68,0.15); color: #ef4444;">⚔️ Justice Level</span>
+            </div>
+            <!-- Faction 5 -->
+            <div class="glass-card faction-card reveal reveal-delay-2">
+                <span class="faction-icon">💼</span>
+                <h3>QISB — School of Business</h3>
+                <div class="faction-theme">The Syndicate Boardroom — Wayne Enterprises / Shark Tank</div>
+                <div class="faction-challenge">Challenge: "The Multiverse Pitch"</div>
+                <p>Grab a random ridiculous prop (a rubber chicken, a floppy disk) and pitch it as a billion-dollar startup to student "Billionaire Investors." Most creative pitch wins!</p>
+                <span class="faction-tag" style="background: rgba(59,130,246,0.15); color: var(--neon-blue);">💰 Tycoon Level</span>
+            </div>
+            <!-- Faction 6 -->
+            <div class="glass-card faction-card reveal reveal-delay-3">
+                <span class="faction-icon">🏥</span>
+                <h3>Faculty of Health Sciences</h3>
+                <div class="faction-theme">Bio-Sanctuary — Wakandan Med-Bay / Mercy's Clinic</div>
+                <div class="faction-challenge">Challenge: "Heal the Carry"</div>
+                <p>A high-adrenaline triage simulation — perform 30 seconds of CPR on a training dummy or bandage a "wounded hero." Plus: Build your own Frankenstein anatomy model!</p>
+                <span class="faction-tag" style="background: rgba(6,182,212,0.15); color: var(--neon-cyan);">💊 Healer Level</span>
+            </div>
+            <!-- Faction 7 -->
+            <div class="glass-card faction-card reveal reveal-delay-1">
+                <span class="faction-icon">🧠</span>
+                <h3>VCare Psychology — PAVC</h3>
+                <div class="faction-theme">The Mind Sanctuary — Cerebro / Doctor Strange / Inside Out</div>
+                <div class="faction-challenge">Challenge: "Mind Over Matter"</div>
+                <p>A calming guided deep-breathing exercise, color-therapy puzzle, or optical illusion challenge. Plus: The Kira Investigation — a Death Note themed social deduction game!</p>
+                <span class="faction-tag" style="background: rgba(168,85,247,0.15); color: var(--neon-purple);">🔮 Mind Level</span>
+            </div>
+            <!-- Faction 7 -->
+            <div class="glass-card faction-card reveal reveal-delay-2">
+                <span class="faction-icon">📜</span>
+                <h3>Center for Post Graduate Studies (CPS)</h3>
+                <div class="faction-theme">The Kage Summit — Naruto Hokages / Jedi Council</div>
+                <div class="faction-challenge">Challenge: "The Wisdom Exchange"</div>
+                <p>Speak to an Alumni "Master" about their career journey. Earn the "Wisdom Stamp" by asking one genuine question about career progression. The VIP lounge of knowledge.</p>
+                <span class="faction-tag" style="background: rgba(236,72,153,0.15); color: var(--neon-pink);">👑 Master Level</span>
+            </div>
+            <!-- Faction 8 -->
+            <div class="glass-card faction-card reveal reveal-delay-1">
+                <span class="faction-icon">🧩</span>
+                <h3>Faculty of Educational Studies</h3>
+                <div class="faction-theme">The Grand Academy — Assassination Classroom / UA High</div>
+                <div class="faction-challenge">Challenge: "The Sensei's Trial"</div>
+                <p>Step into the shoes of a hero instructor. Solve a rapid-fire teaching puzzle or guide a blindfolded teammate through a maze using only precise verbal instructions!</p>
+                <span class="faction-tag" style="background: rgba(249,115,22,0.15); color: var(--neon-orange);">🎓 Teacher Level</span>
+            </div>
+            <!-- Faction 9 -->
+            <div class="glass-card faction-card reveal reveal-delay-3">
+                <span class="faction-icon">🈯</span>
+                <h3>Chinese Language Centre</h3>
+                <div class="faction-theme">The Linguistic Archive — Avatar / Jujutsu Kaisen</div>
+                <div class="faction-challenge">Challenge: "Decipher the Scroll"</div>
+                <p>A fun "Basic Chinese for Anime Fans" workshop. Learn to write iconic anime catchphrases or martial arts techniques in Chinese calligraphy to earn your stamp!</p>
+                <span class="faction-tag" style="background: rgba(34,197,94,0.15); color: var(--neon-green);">📜 Scholar Level</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ATTRACTIONS -->
+<section class="section" id="attractions" style="background: linear-gradient(180deg, transparent, rgba(59,130,246,0.03), transparent);">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// SIDE QUESTS</span>
+            <h2 class="section-title">Attractions & Entertainment</h2>
+            <p class="section-desc">Beyond the quest, the entire campus transforms into an immersive pop-culture festival. Hours of entertainment, unforgettable moments.</p>
+        </div>
+
+        <div class="attractions-showcase">
+            <!-- Attraction 1 -->
+            <div class="glass-card attraction-card reveal reveal-delay-1">
+                <div class="card-image"><img src="images/gaming.png" alt="Gaming Zone" id="editableGamingImg"></div>
+                <div class="card-body">
+                    <h3>🎮 The Gaming Zone</h3>
+                    <p>PS5, Xbox, Nintendo Switch tournaments, VR experiences, Just Dance battles, and Esports "Boss Fights" where you challenge a champion player on the big screen. Beat them and win instant prizes!</p>
+                </div>
+            </div>
+            <!-- Attraction 2 -->
+            <div class="glass-card attraction-card reveal reveal-delay-2">
+                <div class="card-image"><img src="images/horror.png" alt="Horror Zone" id="editableHorrorImg"></div>
+                <div class="card-body">
+                    <h3>👻 The Horror Maze</h3>
+                    <p>Five Nights at Freddy's animatronic maze OR The Last of Us zombie survival. Navigate through terrifying jump-scares in a winding maze built inside the campus. Exit door reads "6 AM."</p>
+                </div>
+            </div>
+            <!-- Attraction 3 -->
+            <div class="glass-card attraction-card reveal reveal-delay-3">
+                <div class="card-image"><img src="images/photobooth.png" alt="Photo Booth" id="editablePhotoImg"></div>
+                <div class="card-body">
+                    <h3>📸 The Isekai Portal — Photo Booth</h3>
+                    <p>Green screen with lightsabers, wands, straw hats & more. Get cinematic slow-mo action shots. Share on Instagram/TikTok tagging Villa College for bonus quest stamps!</p>
+                </div>
+            </div>
+            <!-- Attraction 4 -->
+            <div class="glass-card attraction-card reveal reveal-delay-1">
+                <div class="card-image"><img src="images/sanctuary.png" alt="VCare Mind Sanctuary" id="editableSanctuaryImg"></div>
+                <div class="card-body">
+                    <h3>🧘 The Mind Sanctuary — VCare</h3>
+                    <p>A calming haven amidst the chaos. Bean bags, Lo-Fi music, glowing orbs, and guided meditations. Plus the Death Note "Kira Investigation" — a psychological deduction game!</p>
+                </div>
+            </div>
+            <!-- Attraction 5 -->
+            <div class="glass-card attraction-card reveal reveal-delay-2">
+                <div class="card-image"><img src="images/marketplace.png" alt="Marketplace" id="editableMarketImg"></div>
+                <div class="card-body">
+                    <h3>🏪 The Tavern Marketplace</h3>
+                    <p>Browse anime merch from Otaku Shop MV, Miniso collectibles, 3D-printed Minecraft keychains, custom stationery & more. The ultimate otaku shopping experience!</p>
+                </div>
+            </div>
+            <!-- Attraction 6: Moot Court -->
+            <div class="glass-card attraction-card reveal reveal-delay-3">
+                <div class="card-image"><div style="width:100%;height:100%;background:linear-gradient(135deg, rgba(239,68,68,0.2), rgba(10,10,26,0.8));display:flex;align-items:center;justify-content:center;font-size:4rem;">⚖️</div></div>
+                <div class="card-body">
+                    <h3>🏛️ The Ace Attorney Moot Court</h3>
+                    <p>Experience Villa College's state-of-the-art Moot Court facility transformed into a dramatic comic-book tribunal! Stand at the actual defendant standing desk under a spotlight and argue your case!</p>
+                </div>
+            </div>
+            <!-- Attraction 7: Library -->
+            <div class="glass-card attraction-card reveal reveal-delay-1">
+                <div class="card-image"><div style="width:100%;height:100%;background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(10,10,26,0.8));display:flex;align-items:center;justify-content:center;font-size:4rem;">📚</div></div>
+                <div class="card-body">
+                    <h3>📖 The Grand Library & Archives</h3>
+                    <p>Explore the vast Villa College Library for the Rogue AI Scavenger Hunt. Find hidden golden QR codes tucked behind bookshelves for massive point multipliers, or relax in the manga reading zone!</p>
+                </div>
+            </div>
+            <!-- Attraction 8 - More attractions card -->
+            <div class="glass-card attraction-card reveal reveal-delay-2" style="display: flex; align-items: center; justify-content: center; min-height: 350px;">
+                <div class="card-body" style="text-align: center;">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">🎪 And So Much More!</h3>
+                    <div style="text-align: left; columns: 2; column-gap: 2rem;">
+                        <p style="margin-bottom: 0.5rem;">🔎 Scooby Doo Murder Mystery</p>
+                        <p style="margin-bottom: 0.5rem;">🦑 Squid Game Escape Room</p>
+                        <p style="margin-bottom: 0.5rem;">⚗️ Hogwarts Potions Lab</p>
+                        <p style="margin-bottom: 0.5rem;">🎤 Anime Karaoke</p>
+                        <p style="margin-bottom: 0.5rem;">🎨 Artist Alley</p>
+                        <p style="margin-bottom: 0.5rem;">🐱 Cat Petting Center</p>
+                        <p style="margin-bottom: 0.5rem;">🎭 Face Painting</p>
+                        <p style="margin-bottom: 0.5rem;">🔫 RE Target Practice</p>
+                        <p style="margin-bottom: 0.5rem;">🗡️ One Piece Treasure Hunt</p>
+                        <p style="margin-bottom: 0.5rem;">😤 Rage Room</p>
+                        <p style="margin-bottom: 0.5rem;">🎙️ Voice Acting Booth</p>
+                        <p style="margin-bottom: 0.5rem;">😂 Meme Wall</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="section" id="schedule">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// THE BATTLE PLAN</span>
+            <h2 class="section-title">2-Day Event Schedule</h2>
+            <p class="section-desc">Two action-packed days of non-stop entertainment, challenges, and experiences.</p>
+        </div>
+
+        <div class="schedule-tabs reveal">
+            <button class="schedule-tab active" onclick="switchDay(1)">⚔️ DAY 1 — MAY 01</button>
+            <button class="schedule-tab" onclick="switchDay(2)">🏆 DAY 2 — MAY 02</button>
+        </div>
+
+        <div class="reveal">
+            <!-- Day 1 -->
+            <div class="schedule-panel active" id="day1">
+                <table class="schedule-table">
+                    <thead><tr><th>Time</th><th>Main Stage</th><th>Campus Quest</th><th>Side Attractions</th></tr></thead>
+                    <tbody>
+                        <tr><td>10:00–10:30</td><td>🎉 Opening Ceremony & Hype</td><td>Quest officially opens</td><td>All zones open</td></tr>
+                        <tr><td>10:30–12:00</td><td>🎶 Music / DJ / Hype Session</td><td>Active questing begins</td><td>Horror Maze, Escape Room, Gaming</td></tr>
+                        <tr><td>12:00–13:00</td><td>🍔 Lunch Break (VC Ads)</td><td>Questing continues</td><td>Food stalls peak</td></tr>
+                        <tr><td>13:00–14:00</td><td>👗 Cosplay Ramp Walk (Live Voting!)</td><td>Active questing</td><td>Photo Booth peak</td></tr>
+                        <tr><td>14:00–15:00</td><td>🎤 Cosplay Lip Sync Battle</td><td>Active questing</td><td>All attractions active</td></tr>
+                        <tr><td>15:00–16:00</td><td>🎮 Esports Boss Fights on Big Screen</td><td>Active questing</td><td>Karaoke, Face Paint</td></tr>
+                        <tr><td>16:00–17:00</td><td>🏅 Day 1 Prize Announcements</td><td>Quest wrap-up</td><td>Wind down</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Day 2 -->
+            <div class="schedule-panel" id="day2">
+                <table class="schedule-table">
+                    <thead><tr><th>Time</th><th>Main Stage</th><th>Campus Quest</th><th>Side Attractions</th></tr></thead>
+                    <tbody>
+                        <tr><td>10:00–10:30</td><td>🚀 Day 2 Launch & Recap</td><td>Quest reopens</td><td>All zones reopen</td></tr>
+                        <tr><td>10:30–12:00</td><td>🎵 "Name That Tune" Anime Edition</td><td>Active questing</td><td>All attractions active</td></tr>
+                        <tr><td>12:00–13:00</td><td>📹 Day 1 Highlight Reel</td><td>Questing continues</td><td>Food & Merch browsing</td></tr>
+                        <tr><td>13:00–14:00</td><td>🎸 Live Band "The Bards" Session</td><td>Active questing</td><td>Photo Booth, Mafia Game</td></tr>
+                        <tr><td>14:00–15:00</td><td>🎮 Esports Grand Finals</td><td>Final quest rush</td><td>Last chance for stamps</td></tr>
+                        <tr><td>15:00–15:30</td><td>🏆 GRAND PRIZE DRAW!</td><td>Admissions Hub final push</td><td>Winding down</td></tr>
+                        <tr><td>15:30–16:00</td><td>🎓 Closing Ceremony & May Intake CTA</td><td>Quest closes</td><td>Teardown begins</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MARKETPLACE & FOOD -->
+<section class="section" id="marketplace" style="background: linear-gradient(180deg, transparent, rgba(236,72,153,0.03), transparent);">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// THE TAVERN</span>
+            <h2 class="section-title">Themed Food & Marketplace</h2>
+            <p class="section-desc">Iconic anime & gaming inspired food, plus the best local otaku merchandise vendors all under one roof.</p>
+        </div>
+
+        <div class="food-grid reveal">
+            <div class="glass-card food-item"><span class="food-emoji">🍜</span><h4>Naruto's Ramen Bowls</h4><p>Naruto</p></div>
+            <div class="glass-card food-item"><span class="food-emoji">🧁</span><h4>Gum Gum Fruit Cupcakes</h4><p>One Piece</p></div>
+            <div class="glass-card food-item"><span class="food-emoji">🍗</span><h4>Howl's Chicken & Eggs</h4><p>Howl's Moving Castle</p></div>
+            <div class="glass-card food-item"><span class="food-emoji">🧇</span><h4>Eggo Waffles</h4><p>Stranger Things</p></div>
+            <div class="glass-card food-item"><span class="food-emoji">🍬</span><h4>Dalgona Candy</h4><p>Squid Game</p></div>
+            <div class="glass-card food-item"><span class="food-emoji">🍕</span><h4>Pizza Slices</h4><p>Teenage Mutant Ninja Turtles</p></div>
+            <div class="glass-card food-item"><span class="food-emoji">🥤</span><h4>Slurp Juice</h4><p>Fortnite</p></div>
+            <div class="glass-card food-item"><span class="food-emoji">🥛</span><h4>Blue Milk</h4><p>Star Wars</p></div>
+            <div class="glass-card food-item"><span class="food-emoji">🫧</span><h4>Spirit Bomb Smoothie</h4><p>Dragon Ball Z</p></div>
+            <div class="glass-card food-item"><span class="food-emoji">🍝</span><h4>Spaghetti & Meatballs</h4><p>Lady and the Tramp</p></div>
+        </div>
+
+        <div class="glass-card reveal" style="margin-top: 3rem; text-align: center;">
+            <h3 style="font-family: 'Bangers', cursive; font-size: 1.5rem; letter-spacing: 1px; margin-bottom: 1rem; color: var(--neon-pink);">🛍️ Merchandise Vendors</h3>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                <span style="padding: 0.5rem 1rem; background: rgba(168,85,247,0.1); border: 1px solid rgba(168,85,247,0.2); border-radius: 50px; font-size: 0.85rem;">Miniso Maldives 🧸</span>
+                <span style="padding: 0.5rem 1rem; background: rgba(236,72,153,0.1); border: 1px solid rgba(236,72,153,0.2); border-radius: 50px; font-size: 0.85rem;">Otaku Shop MV 📚</span>
+                <span style="padding: 0.5rem 1rem; background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2); border-radius: 50px; font-size: 0.85rem;">Realm MV 🏴‍☠️</span>
+                <span style="padding: 0.5rem 1rem; background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.2); border-radius: 50px; font-size: 0.85rem;">Kakkoii MV 📌</span>
+                <span style="padding: 0.5rem 1rem; background: rgba(249,115,22,0.1); border: 1px solid rgba(249,115,22,0.2); border-radius: 50px; font-size: 0.85rem;">Daisy's Petals & Pixels 🎲</span>
+                <span style="padding: 0.5rem 1rem; background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.2); border-radius: 50px; font-size: 0.85rem;">Crescent Creates ✨</span>
+            </div>
+            <p style="margin-top: 1.5rem; color: var(--text-secondary); font-size: 0.9rem;"><strong>Food Partners:</strong> Hi Lemon 🍜 (Korean Cuisine) &bull; Ramen House 🍣 (Japanese Cuisine)</p>
+        </div>
+    </div>
+</section>
+
+<!-- KPI / IMPACT -->
+<section class="section" id="kpi">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// THE IMPACT</span>
+            <h2 class="section-title">Expected Outcomes & KPIs</h2>
+            <p class="section-desc">Every activity, attraction, and marketing dollar is engineered to deliver measurable results.</p>
+        </div>
+
+        <div class="kpi-grid reveal">
+            <div class="glass-card kpi-card"><span class="kpi-icon">👥</span><div class="kpi-value">500+</div><div class="kpi-label">Verified Lead Profiles Captured</div></div>
+            <div class="glass-card kpi-card"><span class="kpi-icon">📝</span><div class="kpi-value">50+</div><div class="kpi-label">On-the-Spot Applications</div></div>
+            <div class="glass-card kpi-card"><span class="kpi-icon">📱</span><div class="kpi-value">100K+</div><div class="kpi-label">Social Media Impressions</div></div>
+            <div class="glass-card kpi-card"><span class="kpi-icon">🤝</span><div class="kpi-value">3–5</div><div class="kpi-label">Corporate Sponsors Secured</div></div>
+            <div class="glass-card kpi-card"><span class="kpi-icon">📞</span><div class="kpi-value">30+</div><div class="kpi-label">Post-Event Conversions (10 Days)</div></div>
+            <div class="glass-card kpi-card"><span class="kpi-icon">🏆</span><div class="kpi-value">80+</div><div class="kpi-label">Total Combined Applications</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- THE FUTURE -->
+<section class="section" id="future" style="background: linear-gradient(180deg, transparent, rgba(59,130,246,0.03), transparent);">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// BEYOND 2026</span>
+            <h2 class="section-title">An Expanding Multiverse: The Yearly Tradition</h2>
+            <p class="section-desc">Campus Quest isn't just a one-off campaign — it is the blueprint for a recurring, highly anticipated national youth festival.</p>
+        </div>
+
+        <div class="glass-card reveal" style="text-align: center; max-width: 900px; margin: 0 auto; padding: 3rem 2rem;">
+            <h3 style="font-family: 'Bangers', cursive; font-size: 2rem; color: var(--neon-purple); margin-bottom: 1.5rem; letter-spacing: 1px;">Building Maldives' Ultimate Youth IP</h3>
+            <p style="color: var(--text-secondary); font-size: 1.15rem; line-height: 1.8; margin-bottom: 2rem;">
+                By successfully launching the "Comic Con Edition," Villa College establishes a proprietary intellectual property that can evolve every single year. Imagine future iterations like <strong style="color:var(--neon-cyan);">Campus Quest: The Sci-Fi Edition</strong>, <strong style="color:var(--neon-pink);">Campus Quest: Fantasy Realms</strong>, or <strong style="color:var(--neon-green);">Campus Quest: Cyberpunk City</strong>.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; text-align: left;">
+                <div style="background: rgba(10,10,26,0.5); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(168,85,247,0.2);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📅</div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.1rem;">Annual Hook</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">A predictable, high-hype event every academic year that students nationwide eagerly wait for.</p>
+                </div>
+                <div style="background: rgba(10,10,26,0.5); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(168,85,247,0.2);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤝</div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.1rem;">Brand Loyalty</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Solidifies Villa College not just as an educational institution, but as the cultural hub for Maldivian youth.</p>
+                </div>
+                <div style="background: rgba(10,10,26,0.5); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(168,85,247,0.2);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📈</div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.1rem;">Scalable Growth</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Each iteration builds value, attracting larger corporate sponsors, massive vendor fees, and earned media PR.</p>
+                </div>
+            </div>
+            <p style="color: var(--neon-cyan); font-weight: 600; font-size: 1.15rem; margin-top: 2.5rem; display: inline-block; padding-top: 1.5rem; border-top: 1px solid var(--glass-border);">
+                This project represents a sustainable, long-term marketing engine for Villa College.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-logo">CAMPUS QUEST: COMIC CON EDITION</div>
+    <p>Villa College &bull; QI Campus, Malé, Maldives</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-secondary);">Prepared by The Organizing Committee &bull; "Powering the Next Generation of Heroes"</p>
+</footer>
+
+<script>
+// ===== FORCE SCROLL TO TOP ON REFRESH =====
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+// Disable smooth scroll temporarily so instant jump works
+document.documentElement.style.scrollBehavior = 'auto';
+window.scrollTo(0, 0);
+
+// Remove the hash from URL if it exists
+if (window.location.hash) {
+    history.replaceState('', document.title, window.location.pathname);
+}
+
+// Force a second jump just to be safe, then restore smooth scrolling
+window.onload = function() {
+    window.scrollTo(0, 0);
+    setTimeout(() => {
+        document.documentElement.style.scrollBehavior = 'smooth';
+    }, 100);
+};
+
+// ===== PARTICLES =====
+(function createParticles() {
+    const bg = document.getElementById('bgParticles');
+    const colors = ['#a855f7','#3b82f6','#ec4899','#22c55e','#06b6d4'];
+    for (let i = 0; i < 40; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle';
+        const size = Math.random() * 4 + 1;
+        p.style.cssText = `
+            width:${size}px;height:${size}px;
+            left:${Math.random()*100}%;
+            background:${colors[Math.floor(Math.random()*colors.length)]};
+            animation-duration:${Math.random()*15+10}s;
+            animation-delay:${Math.random()*15}s;
+        `;
+        bg.appendChild(p);
+    }
+})();
+
+// ===== MOUSE TRACKING =====
+document.addEventListener('mousemove', e => {
+    document.getElementById('bgParticles').style.setProperty('--mx', e.clientX + 'px');
+    document.getElementById('bgParticles').style.setProperty('--my', e.clientY + 'px');
+});
+
+// ===== NAVBAR =====
+window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    // Active link
+    const sections = document.querySelectorAll('.section, .hero');
+    let current = '';
+    sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 200) current = s.id;
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+});
+
+function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+}
+
+// ===== SCROLL REVEAL =====
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ===== SCHEDULE TABS =====
+function switchDay(day) {
+    document.querySelectorAll('.schedule-tab').forEach((t, i) => t.classList.toggle('active', i === day - 1));
+    document.querySelectorAll('.schedule-panel').forEach((p, i) => p.classList.toggle('active', i === day - 1));
+}
+
+// ===== ANIMATED COUNTERS =====
+const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting && !e.target.dataset.counted) {
+            e.target.dataset.counted = 'true';
+            const text = e.target.textContent;
+            const num = parseInt(text.replace(/[^0-9]/g, ''));
+            const suffix = text.replace(/[0-9]/g, '');
+            if (isNaN(num)) return;
+            let current = 0;
+            const step = Math.max(1, Math.floor(num / 60));
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= num) { current = num; clearInterval(timer); }
+                e.target.textContent = current + suffix;
+            }, 20);
+        }
+    });
+}, { threshold: 0.5 });
+document.querySelectorAll('.stat-number, .kpi-value').forEach(el => counterObserver.observe(el));
+
+// ===== SMOOTH SCROLL FOR NAV =====
+document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', e => {
+        document.getElementById('navLinks').classList.remove('open');
+    });
+});
+</script>
+
+</body>
+</html>
