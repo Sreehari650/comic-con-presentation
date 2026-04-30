@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Quest: Focal Point Update</title>
+    <meta name="description" content="Focal Point Update for Campus Quest: Comic Con Edition">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Animated Background -->
+<div class="bg-particles" id="bgParticles"></div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-logo">⚡ FOCAL POINTS UPDATE</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#vision">The Vision</a></li>
+        <li><a href="#status">Status Update</a></li>
+        <li><a href="#webapp">Web App</a></li>
+        <li><a href="#faculties">Faculties and Departments Zones</a></li>
+        <li><a href="#next-steps">Next Steps</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+    <div class="hero-bg">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg, rgba(10,10,26,0.9), rgba(10,10,26,0.6));"></div>
+    </div>
+    <div class="hero-content">
+        <div class="hero-badge">📢 FOCAL POINT MEETING</div>
+        <h1 class="hero-title">
+            <span class="line1">CAMPUS QUEST</span>
+            <span class="line2 glitch" data-text="COMIC-CON EDITION">COMIC-CON EDITION</span>
+        </h1>
+        <p class="hero-subtitle animate-text-1">Faculty & Department Operations Update</p>
+        <p class="hero-desc animate-text-2">A comprehensive overview of the event status, the digital Hero Passport system, and specific action items for all Faculties and Departments focal points.</p>
+        <a href="#vision" class="hero-cta">START PRESENTATION ↓</a>
+    </div>
+    <div class="scroll-indicator">↓</div>
+</section>
+
+<!-- THE VISION -->
+<section class="section" id="vision">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// SLIDE 01</span>
+            <h2 class="section-title">The Vision & The Goal</h2>
+            <p class="section-desc">Transforming the traditional "Open Day" into a massive, gamified pop-culture festival.</p>
+        </div>
+
+        <div class="glass-card reveal" style="max-width: 900px; margin: 0 auto;">
+            <ul class="highlight-list" style="margin-top: 0;">
+                <li><span class="icon">📅</span> <span><strong>Event Dates:</strong> May 15 & 16, 2026 (4 PM – 10 PM)</span></li>
+                <li><span class="icon">🚀</span> <span><strong>The Big Picture:</strong> We are turning the campus into a living, breathing Comic-Con. Each Faculty and Department is a themed "zone" with interactive challenges.</span></li>
+                <li><span class="icon">🎯</span> <span><strong>The Ultimate Goal:</strong> This is our most aggressive student recruitment campaign for the <strong>May 2026 Intake</strong>. Every activity is engineered to generate leads and drive immediate applications.</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- STATUS UPDATE -->
+<section class="section" id="status" style="background: linear-gradient(180deg, transparent, rgba(168,85,247,0.03), transparent);">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// SLIDE 02</span>
+            <h2 class="section-title">Overall Event Status Update</h2>
+            <p class="section-desc">Where we stand today in our preparation.</p>
+        </div>
+
+        <div class="stats-row" style="margin-top: 2rem;">
+            <div class="stat-card glass-card reveal reveal-delay-1" style="flex: 1; text-align: left; padding: 2rem;">
+                <h3 style="color: var(--neon-cyan); margin-bottom: 1rem;">✅ Concept Locked</h3>
+                <p>Faculties and Departments Zones, Main Stage (Cosplay/Open Mic), Gaming Zone, and Themed Food Stalls.</p>
+            </div>
+            <div class="stat-card glass-card reveal reveal-delay-2" style="flex: 1; text-align: left; padding: 2rem;">
+                <h3 style="color: var(--neon-pink); margin-bottom: 1rem;">📢 Marketing</h3>
+                <p>A full 48-day viral marketing sprint kicks off soon, utilizing targeted digital ads and student ambassadors.</p>
+            </div>
+        </div>
+        <div class="stats-row" style="margin-top: 2rem;">
+            <div class="stat-card glass-card reveal reveal-delay-3" style="flex: 1; text-align: left; padding: 2rem;">
+                <h3 style="color: var(--neon-yellow); margin-bottom: 1rem;">🤝 Sponsorships</h3>
+                <p>Tiered packages (Title, Zone, Station, Prize) are actively being pitched to brands.</p>
+            </div>
+            <div class="stat-card glass-card reveal reveal-delay-4" style="flex: 1; text-align: left; padding: 2rem;">
+                <h3 style="color: var(--neon-green); margin-bottom: 1rem;">👥 Student Societies</h3>
+                <p>Engaged as the "Ambassador League" to staff and run the specific zones.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WEB APP -->
+<section class="section" id="webapp">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// SLIDE 03</span>
+            <h2 class="section-title">The Digital Backbone — Web App Update</h2>
+            <p class="section-desc">No more paper. We have developed a custom, mobile-first Web App to manage the entire event.</p>
+        </div>
+
+        <div class="what-is-grid reveal">
+            <div class="what-is-text">
+                <h3>📱 The Campus Quest App</h3>
+                <p>Attendees must register on the app to get their "Digital Hero Passport." This captures their Name, Email, Phone, and O/A Level status before they even arrive.</p>
+                <h4 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--neon-blue);">How it Works for You:</h4>
+                <ul class="highlight-list">
+                    <li><span class="icon">1️⃣</span> <span>Attendees visit your Faculty and Department Zone.</span></li>
+                    <li><span class="icon">2️⃣</span> <span>They complete your 2-minute challenge.</span></li>
+                    <li><span class="icon">3️⃣</span> <span>You reveal a secure QR code.</span></li>
+                    <li><span class="icon">4️⃣</span> <span>They scan it with the app to earn a "Digital Stamp" on their passport.</span></li>
+                </ul>
+                <div style="margin-top: 1.5rem; padding: 1.5rem; background: rgba(239,68,68,0.1); border-left: 4px solid #ef4444; border-radius: 0 8px 8px 0;">
+                    <strong style="color: #ef4444;">The Conversion:</strong> Attendees MUST collect all stamps to enter the Grand Prize Draw at the Admissions Hub (The Final Boss). This forces 100% of motivated attendees to speak to an Admissions Counselor.
+                </div>
+            </div>
+            <div class="what-is-image" style="background: rgba(10,10,26,0.5); display: flex; align-items: center; justify-content: center; border-radius: 20px; border: 1px solid var(--glass-border);">
+                <div style="font-size: 6rem; text-align: center;">
+                    📱<br><span style="font-size: 1.5rem; color: var(--neon-cyan); font-family: 'Orbitron', sans-serif;">Hero Passport UI</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FACULTY ZONES -->
+<section class="section" id="faculties" style="background: linear-gradient(180deg, transparent, rgba(59,130,246,0.03), transparent);">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// DEEP DIVE</span>
+            <h2 class="section-title">Faculties and Departments Specific Updates</h2>
+            <p class="section-desc">Your roles, your themes, and the challenges you need to prepare.</p>
+        </div>
+
+        <div class="factions-grid">
+            <!-- VCare -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">🧠</span>
+                <h3>VCare</h3>
+                <div class="faction-theme">Theme: Super Villians</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> WW 201<br>
+                    <strong>Focal Point:</strong> Thynum
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- SPC -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">🎯</span>
+                <h3>SPC</h3>
+                <div class="faction-theme">Theme: Super Villians</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> WW 202<br>
+                    <strong>Focal Point:</strong> Thynum
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- FES -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">🧩</span>
+                <h3>FES</h3>
+                <div class="faction-theme">Theme: Cartoon Network</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> WW 203<br>
+                    <strong>Focal Point:</strong> Samaahath
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- CFS -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">🎓</span>
+                <h3>CFS</h3>
+                <div class="faction-theme">Theme: Jujitsu Kaisen</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> WW101<br>
+                    <strong>Focal Point:</strong> salavutheen, shaneeza
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- FHS -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">🏥</span>
+                <h3>FHS</h3>
+                <div class="faction-theme">Theme: Avengers meet greys anatomy</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> Nursing Lab/Pharmacy lab<br>
+                    <strong>Focal Point:</strong> Nashaya
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- CLC -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">🈯</span>
+                <h3>CLC</h3>
+                <div class="faction-theme">Theme: Kungfu Panda</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> QI Lounge ( TV Area)<br>
+                    <strong>Focal Point:</strong> Yang Meng
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- IAD/ Library -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">📚</span>
+                <h3>IAD/ Library</h3>
+                <div class="faction-theme">Theme: Avatar - Pandora Learning World</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> Library<br>
+                    <strong>Focal Point:</strong> Zahil, jana
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- Finance, Registrations, VC Central -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">🏢</span>
+                <h3>Finance, Registrations, VC Central</h3>
+                <div class="faction-theme">Theme: Wednesday netflix webseries (VC Central) / Harry potter (Reg/Fin)</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> VC Central and Lounge ( Entrance half)<br>
+                    <strong>Focal Point:</strong> Suha (finance), Humam (Registration), Malsa (VC Central)
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- School of Hospitality -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">🍽️</span>
+                <h3>School of Hospitality</h3>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> Ground Floor Kitchen<br>
+                    <strong>Focal Point:</strong> Naura
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- FSL -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">⚖️</span>
+                <h3>FSL</h3>
+                <div class="faction-theme">Theme: Gotham City</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> Moot Court<br>
+                    <strong>Focal Point:</strong> Amish
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- FET -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">⚙️</span>
+                <h3>FET</h3>
+                <div class="faction-theme">Theme: Transformers</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> Engineering labs (3)<br>
+                    <strong>Focal Point:</strong> Ali Waheed, Rashan, Dr. Nafeena
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- HR -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">🤝</span>
+                <h3>HR</h3>
+                <div class="faction-theme">Theme: Disney Villians</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> QI lounge ( Corner TV area)<br>
+                    <strong>Focal Point:</strong> raushan
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- IRI, CPS -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">📜</span>
+                <h3>IRI, CPS</h3>
+                <div class="faction-theme">Theme: Ghibli</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> QI lounge<br>
+                    <strong>Focal Point:</strong> Alishan, Hidaya
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- QISB -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">💼</span>
+                <h3>QISB</h3>
+                <div class="faction-theme">Theme: Avengers</div>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> Vignite<br>
+                    <strong>Focal Point:</strong> Ruchira
+                </div>
+                <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 4px;">
+                    <strong style="color: #ef4444;">Activity brief:</strong> <span style="color: var(--text-secondary);">not yet submitted</span>
+                </div>
+            </div>
+
+            <!-- CAD, Rectorate, CODL, Examinations -->
+            <div class="glass-card faction-card reveal">
+                <span class="faction-icon">🏢</span>
+                <h3>CAD, Rectorate, CODL, Examinations</h3>
+                <div style="margin-top: 1rem; color: var(--text-secondary);">
+                    <strong>Location:</strong> Virtual and with Faculties and Departments<br>
+                    <strong>Focal Point:</strong> shumra
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NEXT STEPS -->
+<section class="section" id="next-steps">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">// YOUR MISSIONS</span>
+            <h2 class="section-title">Next Steps & Deadlines</h2>
+            <p class="section-desc">What we need from you to make this happen.</p>
+        </div>
+
+        <div class="glass-card reveal" style="max-width: 800px; margin: 0 auto; padding: 3rem;">
+            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div style="font-size: 2.5rem; line-height: 1;">1️⃣</div>
+                    <div>
+                        <h3 style="color: var(--neon-cyan); margin-bottom: 0.5rem;">Activity Brief</h3>
+                        <p style="color: var(--text-secondary);">Updation on the activities conducting.</p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div style="font-size: 2.5rem; line-height: 1;">2️⃣</div>
+                    <div>
+                        <h3 style="color: var(--neon-pink); margin-bottom: 0.5rem;">Prop & Decor Sourcing Updates</h3>
+                        <p style="color: var(--text-secondary);">updates about the items</p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div style="font-size: 2.5rem; line-height: 1;">3️⃣</div>
+                    <div>
+                        <h3 style="color: var(--neon-yellow); margin-bottom: 0.5rem;">Student Bodies Coordination</h3>
+                        <p style="color: var(--text-secondary);">Student Bodies to walk through the plan and assign specific roles to students.</p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div style="font-size: 2.5rem; line-height: 1;">4️⃣</div>
+                    <div>
+                        <h3 style="color: var(--neon-green); margin-bottom: 0.5rem;">Web App Testing</h3>
+                        <p style="color: var(--text-secondary);">We will do a full campus dry-run of the Web App and QR scanners before the event. Have at least one rep present.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-logo">CAMPUS QUEST: FOCAL POINTS UPDATE</div>
+    <p>Villa College &bull; QI Campus, Malé, Maldives</p>
+</footer>
+
+<script>
+// ===== FORCE SCROLL TO TOP ON REFRESH =====
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+document.documentElement.style.scrollBehavior = 'auto';
+window.scrollTo(0, 0);
+
+if (window.location.hash) {
+    history.replaceState('', document.title, window.location.pathname);
+}
+
+window.onload = function() {
+    window.scrollTo(0, 0);
+    setTimeout(() => {
+        document.documentElement.style.scrollBehavior = 'smooth';
+    }, 100);
+};
+
+// ===== PARTICLES =====
+(function createParticles() {
+    const bg = document.getElementById('bgParticles');
+    const colors = ['#a855f7','#3b82f6','#ec4899','#22c55e','#06b6d4'];
+    for (let i = 0; i < 40; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle';
+        const size = Math.random() * 4 + 1;
+        p.style.cssText = `
+            width:${size}px;height:${size}px;
+            left:${Math.random()*100}%;
+            background:${colors[Math.floor(Math.random()*colors.length)]};
+            animation-duration:${Math.random()*15+10}s;
+            animation-delay:${Math.random()*15}s;
+        `;
+        bg.appendChild(p);
+    }
+})();
+
+// ===== MOUSE TRACKING =====
+document.addEventListener('mousemove', e => {
+    document.getElementById('bgParticles').style.setProperty('--mx', e.clientX + 'px');
+    document.getElementById('bgParticles').style.setProperty('--my', e.clientY + 'px');
+});
+
+// ===== NAVBAR =====
+window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    const sections = document.querySelectorAll('.section, .hero');
+    let current = '';
+    sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 200) current = s.id;
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+});
+
+function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+}
+
+// ===== SCROLL REVEAL =====
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', e => {
+        document.getElementById('navLinks').classList.remove('open');
+    });
+});
+</script>
+
+</body>
+</html>
